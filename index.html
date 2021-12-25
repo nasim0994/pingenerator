@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link rel="stylesheet" href="style.css"> <!--css link-->
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="pinArea">
+            <div class="pinGenerator card"> <!--pin generator area-->
+                <input type="text" name="number" class="InputBox" id="pinGeneratorInput">
+                <div id="pinGeneratorBtn">
+                    <h2>Generate Pin</h2>
+                </div>
+            </div>
+        
+            <div class="pinSubmit card"> <!--pin submit area-->
+                <input type="text" name="number" class="InputBox" id="pinSubmitInput" placeholder="Enter Your Pin">
+                <div class="pinSubmitNumber">
+                    <div>
+                        <button value="7" onclick="btn('7')">7</button>
+                        <button  value="8" onclick="btn('8')">8</button>
+                        <button value="9" onclick="btn('9')">9</button>
+                    </div>
+                    <div>
+                        <button value="4" onclick="btn('4')">4</button>
+                        <button value="5" onclick="btn('5')">5</button>
+                        <button value="6" onclick="btn('6')">6</button>
+                    </div>
+                    <div>
+                        <button value="1" onclick="btn('1')">1</button>
+                        <button value="2" onclick="btn('2')">2</button>
+                        <button value="3" onclick="btn('3')">3</button>
+                    </div>
+                    <div>
+                        <button id="backBtn"><</button>
+                        <button value="0" onclick="btn('0')">0</button>
+                        <button id="clearBtn">c</button>
+                    </div>
+                </div>
+                <div class="pinSubmitBtn">
+                    <button id="submitBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="submitResult"> <!--submit result area-->
+            <div id="wrongPin"><span class="cross"><i class="fas fa-times"></i></span>Pin Didn't Match, Please try again</div>
+            <div id="correctPin"><span class="tick"><i class="fas fa-check-square"></i></span>Welcome</div>
+        </div>
+
+        <div id="againPinArea"> Again Try Pin Generate</div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/8300e4f43d.js" crossorigin="anonymous"></script>
+    <script src="pogram.js"></script> <!--javaScript link-->
+</body>
+</html>
